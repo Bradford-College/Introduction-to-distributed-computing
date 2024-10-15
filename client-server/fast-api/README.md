@@ -47,6 +47,14 @@ http://localhost:8000/users/{user_id}
 Replace `{user_id}` with the actual user ID.
 
 ### Add a New User
+```json
+// sample input
+user = {
+    "name": "John Doe",
+    "age": 30,
+    "email": "john.doe@example.com"
+}
+```
 
 To add a new user, send a POST request to:
 

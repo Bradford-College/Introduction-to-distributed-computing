@@ -1,13 +1,8 @@
 [
     {
         "id": 1,
-        "name": "John Doe",
-        "email": "john@example.com"
-    },
-    {
-        "id": 2,
-        "name": "Jane Smith",
-        "email": "jane@example.com"
+        "name": "Abdulhameed Yunusa",
+        "email": "abdul.hameed@example.com"
     },
     {
         "id": 3,
@@ -28,5 +23,11 @@
         "id": 6,
         "name": "Diana Green",
         "email": "diana@example.com"
+    },
+    {
+        "name": "John Doe",
+        "age": 30,
+        "email": "john.doe@example.com",
+        "id": 7
     }
 ]
