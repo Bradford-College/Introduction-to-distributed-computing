@@ -2,16 +2,12 @@ from fastapi import FastAPI, HTTPException
 import json
 from typing import List, Dict
 
+# Import helper functions
+from helper_functions.loadUsers import load_users
+from helper_functions.saveUsers import save_users
+
+#Create an Instance of the fastAPI class
 app = FastAPI()
-
-# Helper function to load and save users
-def load_users() -> List[Dict]:
-    with open("users.json", "r") as f:
-        return json.load(f)
-
-def save_users(users: List[Dict]):
-    with open("users.json", "w") as f:
-        json.dump(users, f, indent=4)
 
 # Fetch all users
 @app.get("/users")
